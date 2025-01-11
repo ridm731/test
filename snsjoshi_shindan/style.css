@@ -1,0 +1,222 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e57373;
+}
+
+/*common*/
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f0fd;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 calc(30 / 375 * 100vw);
+}
+
+.contents_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.common_button {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  /* padding: calc(19 / 375 * 100vw) calc(44 / 375 * 100vw); */
+  /* padding: calc(15 / 375 * 100vw) calc(60 / 375 * 100vw); */
+  padding: calc(15 / 375 * 100vw);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(172, 245, 255), rgba(189, 115, 229));
+  width: calc(250 / 375 * 100vw);
+  margin-bottom: 3%;
+}
+
+/*TOP*/
+.mv_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 85vh;
+  text-align: center;
+}
+
+.mv_wrap img {
+  width: calc(150 / 375 * 100vw);
+}
+
+#top_midashi {
+  width: calc(260 / 375 * 100vw);
+  position: absolute;
+  top: calc(220 / 375 * 100vw);
+  left: calc(57 / 375 * 100vw);
+}
+
+.woman_3 {
+  position: absolute;
+  top: calc(24 / 375 * 100vw);
+  left: calc(39 / 375 * 100vw);
+}
+
+.woman_2 {
+  position: absolute;
+  top: calc(0 / 375 * 100vw);
+  right: calc(30 / 375 * 100vw);
+}
+
+.woman_5 {
+  position: absolute;
+  top: calc(326 / 375 * 100vw);
+  left: calc(-18 / 375 * 100vw);
+}
+
+.woman_4 {
+  position: absolute;
+  top: calc(381 / 375 * 100vw);
+  left: calc(114 / 375 * 100vw);
+}
+
+.woman_1 {
+  position: absolute;
+  top: calc(340 / 375 * 100vw);
+  right: calc(-18 / 375 * 100vw);
+}
+
+.top_button_area {
+  text-align: center;
+}
+
+.common_button.top {
+  position: relative;
+}
+
+.common_button.top img {
+  width: calc(65 / 375 * 100vw);
+  position: absolute;
+  top: -12px;
+  left: -26px;
+  transform: rotate(-20deg);
+}
+
+/*question*/
+#question_midashi {
+  width: calc(155 / 375 * 100vw);
+}
+
+.question_icon {
+  width: calc(100 / 375 * 100vw);
+}
+
+.question {
+  font-size: 24px;
+}
+
+.contents_wrap.question {
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.answer_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*result*/
+
+.fukidashi {
+  font-family: "Yomogi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/************************************* タブレット *******************************************/
+@media (min-width: 768px) {
+}
+
+/*************************************** デスクトップ　***************************************/
+@media (min-width: 1024px) {
+  /* question　*/
+
+  #question_midashi {
+    width: calc(300 / 1920 * 100vw);
+  }
+
+  .question_icon {
+    width: calc(100 / 1920 * 100vw);
+  }
+
+  .common_button {
+    padding: calc(19 / 1920 * 100vw) calc(200 / 1920 * 100vw);
+    width: calc(800 / 1920 * 100vw);
+  }
+}
