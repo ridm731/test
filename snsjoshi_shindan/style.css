@@ -160,7 +160,7 @@ p {
 
 /*question*/
 #question_midashi {
-  width: calc(155 / 375 * 100vw);
+  width: calc(190 / 375 * 100vw);
 }
 
 .question_icon {
@@ -188,7 +188,7 @@ p {
   font-size: 11px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 5%;
+  margin-top: 20%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -517,6 +517,7 @@ h3 {
   .fukidashi_wrap {
     width: 100%;
     margin: calc(60 / 1280 * 100vw) 0 calc(80 / 1280 * 100vw) 0;
+    justify-content: space-around;
   }
 
   .result_icon {
