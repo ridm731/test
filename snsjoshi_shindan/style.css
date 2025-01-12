@@ -164,7 +164,7 @@ p {
 }
 
 .question_icon {
-  width: calc(100 / 375 * 100vw);
+  width: calc(80 / 375 * 100vw);
 }
 
 .question {
