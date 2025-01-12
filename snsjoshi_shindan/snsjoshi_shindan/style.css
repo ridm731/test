@@ -1,0 +1,562 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e57373;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/*common*/
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f0fd;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 calc(30 / 375 * 100vw);
+}
+
+.contents_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(40 / 375 * 100vw) 0;
+}
+
+.common_button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: calc(15 / 375 * 100vw);
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(172, 245, 255), rgba(189, 115, 229));
+  width: calc(250 / 375 * 100vw);
+  margin-bottom: 3%;
+}
+
+p {
+  font-size: 14px;
+}
+
+/*TOP*/
+.mv_wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 85vh;
+  text-align: center;
+}
+
+.mv_wrap img {
+  width: calc(150 / 375 * 100vw);
+}
+
+#top_midashi {
+  width: calc(260 / 375 * 100vw);
+  position: absolute;
+  top: calc(220 / 375 * 100vw);
+  left: calc(57 / 375 * 100vw);
+}
+
+.woman_3 {
+  position: absolute;
+  top: calc(24 / 375 * 100vw);
+  left: calc(39 / 375 * 100vw);
+}
+
+.woman_2 {
+  position: absolute;
+  top: calc(0 / 375 * 100vw);
+  right: calc(30 / 375 * 100vw);
+}
+
+.woman_5 {
+  position: absolute;
+  top: calc(326 / 375 * 100vw);
+  left: calc(-18 / 375 * 100vw);
+}
+
+.woman_4 {
+  position: absolute;
+  top: calc(381 / 375 * 100vw);
+  left: calc(114 / 375 * 100vw);
+}
+
+.woman_1 {
+  position: absolute;
+  top: calc(340 / 375 * 100vw);
+  right: calc(-18 / 375 * 100vw);
+}
+
+.top_button_area {
+  text-align: center;
+}
+
+.common_button.top {
+  position: relative;
+}
+
+.common_button.top img {
+  width: calc(65 / 375 * 100vw);
+  position: absolute;
+  top: -12px;
+  left: -26px;
+  transform: rotate(-20deg);
+}
+
+/*question*/
+#question_midashi {
+  width: calc(155 / 375 * 100vw);
+}
+
+.question_icon {
+  width: calc(100 / 375 * 100vw);
+}
+
+.question {
+  font-size: 24px;
+}
+
+.contents_wrap.question {
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.circle-button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.answer_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*result*/
+.result_head {
+  background-color: #fff;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  border-radius: 15px;
+}
+
+.result_text {
+  font-family: "Kaisei Opti", serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.result_text.head {
+  font-size: 20px;
+  color: #9788df;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.result_text.head::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  transform: rotate(60deg);
+  box-sizing: border-box;
+  background-color: #9788df;
+}
+
+.result_text.head::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  transform: rotate(-60deg);
+  box-sizing: border-box;
+  background-color: #9788df;
+}
+
+.frame {
+  font-size: 22px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 1px 3px rgba(var(--primary-color), 0.6);
+  border-radius: 2em 7em 5em 7em / 10em 3em 1em 1em;
+  /* border: solid 1px #9788df; */
+  color: #9788df;
+  font-family: "Kaisei Opti", serif;
+  text-align: center;
+  margin: calc(80 / 375 * 100vw) 0 0 0;
+  width: 100%;
+  border-bottom: 2px solid;
+}
+
+/* .frame::after {
+  transform: rotate(0.7deg);
+  border-radius: 10em 8em 10em 5em / 5em 10em 6em 10em;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #9788df;
+  border-bottom: 1px solid;
+}
+
+.frame::before {
+  transform: rotate(-0.7deg);
+  border-radius: 6em 6em 2em 9em / 2em 8em 9em 4em;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #9788df;
+} */
+
+.fukidashi_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: calc(20 / 375 * 100vw) 0 calc(40 / 375 * 100vw) 0;
+}
+
+.result_icon {
+  width: calc(90 / 375 * 100vw);
+  height: calc(90 / 375 * 100vw);
+}
+
+.fukidashi {
+  font-family: "Yomogi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  background: #fff;
+  padding: 2%;
+  border-radius: 10px;
+  max-width: calc(200 / 375 * 100vw);
+  display: block;
+  position: relative;
+}
+
+.fukidashi::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(20 / 375 * 100vw);
+  right: calc(100% - 1px);
+  clip-path: polygon(100% 100%, 100% 0, 0 50%);
+  width: calc(15 / 375 * 100vw);
+  height: calc(15 / 375 * 100vw);
+  background: #fff;
+}
+
+h3 {
+  margin: 0 0 calc(20 / 375 * 100vw) 0;
+  font-size: 1.1rem;
+}
+
+.result_photo {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
+
+.result_egao {
+  width: calc(76 / 375 * 100vw);
+  margin: calc(20 / 375 * 100vw) 0;
+}
+
+.article_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: calc(39 / 375 * 100vw);
+  margin: calc(40 / 375 * 100vw) 0;
+}
+
+.article_box {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(22 / 375 * 100vw);
+}
+
+.article_box p {
+  max-width: 200px;
+}
+
+.article_photo {
+  width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+/************************************* タブレット *******************************************/
+@media (min-width: 768px) {
+  /*top*/
+
+  .mv_wrap img {
+    width: calc(200 / 768 * 100vw);
+  }
+
+  #top_midashi {
+    width: calc(300 / 768 * 100vw);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+
+  .woman_3 {
+    position: absolute;
+    top: calc(24 / 768 * 100vw);
+    left: calc(39 / 768 * 100vw);
+  }
+
+  .woman_2 {
+    position: absolute;
+    top: calc(0 / 768 * 100vw);
+    right: calc(30 / 768 * 100vw);
+  }
+
+  .woman_5 {
+    position: absolute;
+    top: calc(326 / 768 * 100vw);
+    left: calc(-18 / 768 * 100vw);
+  }
+
+  .woman_4 {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .woman_1 {
+    position: absolute;
+    top: calc(340 / 768 * 100vw);
+    right: calc(-18 / 768 * 100vw);
+  }
+}
+
+/*************************************** デスクトップ　***************************************/
+@media (min-width: 1024px) {
+  .container {
+    max-width: calc(768 / 1280 * 100vw);
+    margin: 0 auto;
+  }
+
+  .contents_wrap {
+    margin: calc(40 / 1280 * 100vw) 0;
+  }
+
+  /* top　*/
+  .mv_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 85vh;
+    text-align: center;
+  }
+
+  .mv_wrap img {
+    width: calc(200 / 1280 * 100vw);
+  }
+
+  #top_midashi {
+    width: calc(300 / 1280 * 100vw);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+
+  .woman_3 {
+    position: absolute;
+    top: calc(24 / 1280 * 100vw);
+    left: calc(39 / 1280 * 100vw);
+  }
+
+  .woman_2 {
+    position: absolute;
+    top: calc(0 / 1280 * 100vw);
+    right: calc(30 / 1280 * 100vw);
+  }
+
+  .woman_5 {
+    position: absolute;
+    top: calc(326 / 1280 * 100vw);
+    left: calc(-18 / 1280 * 100vw);
+  }
+
+  .woman_4 {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .woman_1 {
+    position: absolute;
+    top: calc(340 / 1280 * 100vw);
+    right: calc(-18 / 1280 * 100vw);
+  }
+
+  .common_button.top img {
+    width: calc(65 / 1280 * 100vw);
+    position: absolute;
+    top: -12px;
+    left: -26px;
+    transform: rotate(-20deg);
+  }
+
+  /* question　*/
+
+  #question_midashi {
+    width: calc(300 / 1920 * 100vw);
+  }
+
+  .question_icon {
+    width: calc(100 / 1920 * 100vw);
+  }
+
+  .common_button {
+    padding: calc(19 / 1280 * 100vw) calc(200 / 1920 * 100vw);
+    width: calc(500 / 1280 * 100vw);
+  }
+
+  /*result*/
+
+  .result_photo {
+    width: 400px;
+  }
+
+  .result_img {
+    max-width: calc(300 / 1280 * 100vw);
+  }
+
+  .result_text {
+    line-height: 1.6;
+  }
+
+  .frame {
+    font-size: 22px;
+    padding: 10px;
+    margin: calc(80 / 1280 * 100vw) 0 0 0;
+    width: 100%;
+  }
+
+  .fukidashi_wrap {
+    width: 100%;
+    margin: calc(60 / 1280 * 100vw) 0 calc(80 / 1280 * 100vw) 0;
+  }
+
+  .result_icon {
+    width: calc(90 / 1280 * 100vw);
+    height: calc(90 / 1280 * 100vw);
+  }
+
+  .fukidashi {
+    max-width: calc(350 / 1280 * 100vw);
+    font-size: 14px;
+  }
+
+  .fukidashi::after {
+    top: calc(20 / 1280 * 100vw);
+    right: calc(100% - 1px);
+    clip-path: polygon(100% 100%, 100% 0, 0 50%);
+    width: calc(15 / 1280 * 100vw);
+    height: calc(15 / 1280 * 100vw);
+  }
+
+  h3 {
+    margin: 0 0 calc(20 / 1280 * 100vw) 0;
+  }
+
+  .result_egao {
+    width: calc(76 / 1280 * 100vw);
+    margin: calc(20 / 1280 * 100vw) 0;
+  }
+
+  .article_wrap {
+    gap: calc(39 / 1280 * 100vw);
+    margin: calc(40 / 1280 * 100vw) 0;
+    width: 100%;
+  }
+
+  .article_box {
+    gap: calc(22 / 1280 * 100vw);
+  }
+
+  .article_box p {
+    max-width: 400px;
+  }
+}
