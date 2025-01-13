@@ -165,7 +165,7 @@ p {
 
 .question_icon {
   width: calc(80 / 375 * 100vw);
-  margin-bottom: calc(80 / 375 * 100vw);
+  margin-bottom: calc(40 / 375 * 100vw);
 }
 
 .question {
@@ -488,7 +488,7 @@ h3 {
 
   .question_icon {
     width: calc(100 / 1920 * 100vw);
-    margin-bottom: calc(80 / 1920 * 100vw);
+    margin-bottom: calc(40 / 1920 * 100vw);
   }
 
   .common_button {
