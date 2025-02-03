@@ -610,6 +610,10 @@ h3 {
 
   /*result*/
 
+  h1 {
+    font-size: 2rem;
+  }
+
   .result_photo {
     width: 400px;
   }
@@ -622,6 +626,10 @@ h3 {
     line-height: 1.6;
   }
 
+  .result_text.head {
+    font-size: 16px;
+  }
+
   .frame {
     font-size: 22px;
     padding: 10px;
@@ -631,7 +639,7 @@ h3 {
 
   .fukidashi_wrap {
     width: 100%;
-    margin: calc(60 / 1280 * 100vw) 0 calc(80 / 1280 * 100vw) 0;
+    margin: calc(20 / 1280 * 100vw) 0 calc(20 / 1280 * 100vw) 0;
     justify-content: space-around;
   }
 
@@ -654,7 +662,7 @@ h3 {
   }
 
   h3 {
-    margin: 0 0 calc(20 / 1280 * 100vw) 0;
+    margin: calc(40 / 1280 * 100vw) 0;
   }
 
   .result_egao {
