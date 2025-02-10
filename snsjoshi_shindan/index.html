@@ -13,7 +13,12 @@
 
     <!-- style.cssの読み込み -->
     <link rel="stylesheet" href="style.css" />
-    <title>SNS女子診断TOP</title>
+
+    <!-- jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js"></script>
+
+    <title>毒彼エピソード診断</title>
   </head>
   <body>
     <div class="mv_wrap">
@@ -27,9 +32,20 @@
       <img class="woman_1" src="img/woman_1.webp" alt="結果1" />
     </div>
     <div class="top_button_area">
-      <button class="common_button top">
-        診断スタート <img src="img/egao.png" alt="ユニコーン笑顔" />
+      <button class="common_button top fadein inview">
+        診断スタート
+        <img class="poyooon" src="img/egao.png" alt="ユニコーン笑顔" />
       </button>
     </div>
+
+    <script>
+      $(function () {
+        $(".inview").on("inview", function (event, isInView) {
+          if (isInView) {
+            $(this).addClass("is-show");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
