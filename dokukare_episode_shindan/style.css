@@ -344,6 +344,10 @@ p {
   }
 }
 
+#pre_cta_text {
+  font-size: 12.3px;
+}
+
 .frame {
   font-size: 22px;
   /* padding: 0px; */
